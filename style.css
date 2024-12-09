@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo  {
+    font-size: 24px;
+
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px wheat, 0 0 30px white
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 1.5rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://static.asianpaints.com/content/dam/asian_paints/blog/colour-combination/types-of-wood-for-furniture/natural-look-wood-furniture.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color:wheat;
+    position: relative;
+    
+}
+ 
+.hero h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ff9800;
+    bottom: -2px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.hero h1:hover::after{
+    width: 100%;
+    left: 0;
+}
+.hero p {
+    margin-bottom: 1rem;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #e67e22;
+}
+
+/* About Section */
+
+
+.h2 {
+    padding-top: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: dimgrey;
+    transition: transform 0.3s ease-in-out;
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px wheat, 0 0 30px white
+    
+}
+
+
+.about {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    background-color: dimgrey;
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+      text-shadow: 0 0 10px wheat , 0 0 20px wheat;
+
+    transition: text-shadow 0.3s;}
+
+.about:hover{
+    text-shadow: 0 0 20px rgb(53, 5, 5), 0 0 40px rgb(104, 16, 16);
+}
+
+
+.gallery {
+    display: flex;
+    width: 257px;
+    height: 257px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+/* Services Section */
+.services {
+    padding: 2rem;
+    text-align: center;
+    background-color: dimgrey;
+    background-color: dimgrey;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px wheat, 0 0 30px white
+}
+
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.card {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px; 
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform-origin: center;
+}
+
+.card:hover{
+    transform: rotateX(25deg) rotateY(25deg); /* Add 3D rotation */
+    background-color:gray;
+}
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card h3:hover{
+    transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
